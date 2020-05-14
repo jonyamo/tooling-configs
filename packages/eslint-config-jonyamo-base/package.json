@@ -4,6 +4,7 @@
   "main": "index.js",
   "license": "MIT",
   "peerDependencies": {
-    "eslint": "^7.0.0"
+    "eslint": "^7.0.0",
+    "prettier": "^2.0.5"
   }
 }
