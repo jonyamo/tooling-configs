@@ -30,3 +30,23 @@ module.exports = {
     },
 };
 ```
+
+### Create React App
+
+For apps built with [`create-react-app`](https://create-react-app.dev), in order to extend the included base config follow [these instructions](https://create-react-app.dev/docs/setting-up-your-editor#experimental-extending-the-eslint-config), which basically state:
+
+1. In `.env` set:
+
+```
+EXTEND_ESLINT=true
+```
+
+2. In `package.json`:
+
+```json
+{
+    "eslintConfig": {
+        "extends": ["react-app", "jonyamo-react"]
+    }
+}
+```
