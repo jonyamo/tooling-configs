@@ -5,11 +5,16 @@
     "packages/*"
   ],
   "scripts": {
-    "preinstall": "/usr/bin/env bash -c \"[[ $npm_execpath = *'yarn'* ]] || (echo 'use yarn' && exit 1)\""
+    "preinstall": "/usr/bin/env bash -c \"[[ $npm_execpath = *'yarn'* ]] || (echo 'use yarn' && exit 1)\"",
+    "lint": "eslint .",
+    "lint:fix": "eslint --fix ."
   },
   "devDependencies": {
     "eslint": "^7.0.0",
     "lerna": "^3.20.2",
     "prettier": "^2.0.5"
+  },
+  "eslintConfig": {
+    "extends": "./packages/eslint-config-jonyamo-base"
   }
 }
