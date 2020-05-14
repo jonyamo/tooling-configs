@@ -7,7 +7,8 @@
   "scripts": {
     "preinstall": "/usr/bin/env bash -c \"[[ $npm_execpath = *'yarn'* ]] || (echo 'use yarn' && exit 1)\"",
     "lint": "eslint .",
-    "lint:fix": "eslint --fix ."
+    "lint:fix": "eslint --fix .",
+    "validate:all": "lerna run validate"
   },
   "devDependencies": {
     "eslint": "^7.0.0",

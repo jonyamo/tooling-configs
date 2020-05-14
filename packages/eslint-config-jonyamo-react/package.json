@@ -3,6 +3,10 @@
   "version": "1.0.0",
   "license": "MIT",
   "main": "index.js",
+  "scripts": {
+    "test:conflicts": "eslint --no-eslintrc -c ./index.js --print-config ./index.js | eslint-config-prettier-check",
+    "validate": "yarn test:conflicts"
+  },
   "dependencies": {
     "eslint-config-jonyamo-base": "^1.0.0",
     "eslint-plugin-jsx-a11y": "^6.2.3",
